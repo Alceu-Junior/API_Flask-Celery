@@ -1,12 +1,15 @@
 # API_Flask-Celery
 
-##PARA RODAR A API
+## DESCRIÇÃO
+
+
+## PARA RODAR A API
 - Ative o REDIS na porta 6379
 - Acione o Worker do CELERY no main a partir do comando "celery -A main.celery worker"
 - Execute o servidor FLASK pelo arquivo main.py
 
 
-##ROTAS DA API
+## ROTAS DA API
 - "http://localhost/credito/"
 Essa é uma rota do tipo POST que está preparada para receber idade, valor e cpf, como no modelo:
 {
