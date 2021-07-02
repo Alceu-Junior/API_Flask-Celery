@@ -1,6 +1,6 @@
 # API_Flask-Celery
 
-#PARA RODAR A API
+##PARA RODAR A API
 - Ative o REDIS na porta 6379
 - Acione o Worker do CELERY no main a partir do comando "celery -A main.celery worker"
 - Execute o servidor FLASK pelo arquivo main.py
