@@ -6,7 +6,7 @@
 - Execute o servidor FLASK pelo arquivo main.py
 
 
-#ROTAS DA API
+##ROTAS DA API
 - "http://localhost/credito/"
 Essa é uma rota do tipo POST que está preparada para receber idade, valor e cpf, como no modelo:
 {
