@@ -12,7 +12,7 @@ try:
     app.config['CELERY_RESULT_BACKEND'] =  'redis://localhost:6379'
     celery = make_celery(app)
 except:
-    print('Por favor, verifique se o Redis e o Celery foram inicializados e se a porta está correta antes de rodar o programa')
+    print(' * Por favor, verifique se o Redis e o Celery foram inicializados e se a porta está correta antes de rodar o programa')
 
 
 @app.route('/credito', methods=['POST'])
@@ -28,7 +28,7 @@ def credito():
         registra_pedido(task.id, cpf, idade, valor)
     except:
         registra_pedido('RETORNAR CONTATO', cpf, idade, valor)
-        print("verifique o funcionamento do Celery, dados do cliente nao atendido registrados com a task.id 'RETORNAR CONTATO'")
+        print(" * Verifique o funcionamento do Celery, dados do cliente nao atendido registrados com a task.id 'RETORNAR CONTATO'")
 
     return task.id, 201
 

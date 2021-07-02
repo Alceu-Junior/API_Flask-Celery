@@ -1,5 +1,5 @@
 from time import sleep
-from rotas_e_funcoes import dados_cliente, requisicao_credito, resposta_ticket, post, get
+from teste_API_rotas_e_funcoes import dados_cliente, requisicao_credito, resposta_ticket, post, get
 
 ticket = post(requisicao_credito, dados_cliente)
 print(ticket.status_code)
