@@ -30,3 +30,4 @@ Enquanto o resultado do processamento não é entregue, a rota devolve PENDING c
 ## Dependencias
 - Desenvolvido em ambiente Windows
 - libs python: Flask, Redis, Celery, Requests.
+
